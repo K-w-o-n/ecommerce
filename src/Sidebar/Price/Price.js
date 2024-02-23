@@ -1,11 +1,17 @@
 import React from 'react'
 import './Price.css'
+import Input from "../../components/Input";
 const Price = () => {
   return (
-    <div>
-      <h1>Price</h1>
+    <div className="ml">
+      <h2 className="sidebar-title price-title">Price</h2>
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
     </div>
-  )
+  );
 }
 
 export default Price
