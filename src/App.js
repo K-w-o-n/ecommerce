@@ -24,7 +24,8 @@ function App() {
 
   const filteredItems = products.filter(
     (product) =>
-    product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    product.title.toLowerCase().indexOf(query.toLowerCase()) !==
+    -1
   );
 
   //------Radio filter-----
@@ -36,7 +37,7 @@ function App() {
 // -------Button Filter------
 
 const handleButtonClick = (event) => {
-  setSelectedCategory(event.target.velue);
+  setSelectedCategory(event.target.value);
 };
 
 function filteredData(products,selected,query) {
